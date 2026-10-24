@@ -25054,6 +25054,7 @@ __PROEHN_EDITOR_BODY_OPEN_7E91__
       <div class="topbar-right">
 
 <div class="proehn-header-support" id="proehn-header-soporte">
+  <div class="proehn-support-main-row">
   <div class="proehn-support-label">
     <div class="support-kicker">SOPORTE TÉCNICO</div>
     <div class="support-title">Redes sociales / datos de contacto</div>
@@ -25104,7 +25105,23 @@ __PROEHN_EDITOR_BODY_OPEN_7E91__
       <span class="chip-data">pro.ehn.soporte.tecnico@gmail.com</span>
     </a>
   </div>
-</div>
+  </div>
+  <div class="proehn-header-cta-actions">
+
+<a id="proehn-research-capsule" href="https://bunnyxnx.github.io/PROEHN_PMOS_DATA/" title="Abrir la Herramienta de Investigación especializada en SOP/PMOS (SOMP)" aria-label="Herramienta de Investigación especializada en SOP/PMOS (SOMP)">
+  <span class="proehn-research-icon" aria-hidden="true">
+    <svg viewBox="0 0 24 24" width="25" height="25" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <path d="m9 3 3 3-5.2 5.2a3.2 3.2 0 0 1-4.5-4.5L7.5 2.5" transform="translate(3 1) scale(.92)"/>
+      <path d="m12.5 8.5 3 3"/>
+      <path d="M10.1 12.3a4.2 4.2 0 0 0 5.9 5.9"/>
+      <path d="M14.5 17.7h5"/>
+      <path d="M17 15.5v4.4"/>
+      <path d="M5 21h15"/>
+    </svg>
+  </span>
+  <span class="proehn-research-text">HERRAMIENTA DE INVESTIGACIÓN ESPECIALIZADA EN SOP/PMOS (SOMP)</span>
+  <span class="proehn-research-arrow" aria-hidden="true">↗</span>
+</a>
 
 <a id="proehn-homepage-capsule" href="https://bunnyxnx.github.io/PROEHN_OFICIAL_PAGE/" target="_blank" rel="noopener noreferrer" title="Abrir la página principal de PRO Enhanced Nutrition" aria-label="Página principal de PRO Enhanced Nutrition">
   <span class="proehn-homepage-icon" aria-hidden="true">
@@ -25117,7 +25134,9 @@ __PROEHN_EDITOR_BODY_OPEN_7E91__
   <span class="proehn-homepage-arrow" aria-hidden="true">↗</span>
 </a>
 
-      </div>
+  </div><!-- /.proehn-header-cta-actions -->
+</div><!-- /#proehn-header-soporte -->
+      </div><!-- /.topbar-right -->
 </div>
 
     <!-- herramientas content -->
@@ -37532,7 +37551,253 @@ html body > .app > .main > .topbar .support-title{
   html body > .app > .main > .topbar .topbar-right{align-items:stretch !important;width:100% !important;max-width:none !important;}
   #proehn-homepage-capsule{width:100% !important;max-width:none !important;justify-content:center !important;}
 }
-@media(prefers-reduced-motion:reduce){#proehn-homepage-capsule{animation:none !important;}}
+
+#proehn-research-capsule{
+  box-sizing:border-box !important;
+  position:relative !important;
+  z-index:260 !important;
+  display:flex !important;
+  align-items:center !important;
+  gap:11px !important;
+  width:max-content !important;
+  max-width:min(680px,calc(100vw - 40px)) !important;
+  padding:10px 15px !important;
+  overflow:hidden !important;
+  border:1px solid #fff0b2 !important;
+  border-radius:15px !important;
+  color:#171208 !important;
+  text-decoration:none !important;
+  background:linear-gradient(135deg,#fff0b8 0%,#e6c65f 33%,#d6b35a 68%,#b8860b 100%) !important;
+  box-shadow:0 8px 22px rgba(0,0,0,.30),0 0 0 1px rgba(255,255,255,.16) inset,0 0 20px rgba(214,179,90,.34) !important;
+  transform-origin:center right !important;
+  animation:proehnResearchPulseV15 2.2s ease-in-out infinite !important;
+  cursor:pointer !important;
+}
+#proehn-research-capsule::before{
+  content:"" !important; position:absolute !important; inset:1px !important;
+  border-radius:12px !important; border:1px solid rgba(255,255,255,.28) !important; pointer-events:none !important;
+}
+#proehn-research-capsule:hover{color:#171208 !important;filter:brightness(1.08) saturate(1.04) !important;animation-duration:1.2s !important;}
+#proehn-research-capsule:focus-visible{outline:3px solid #fff0b8 !important;outline-offset:3px !important;}
+#proehn-research-capsule .proehn-research-icon{
+  flex:0 0 36px !important;width:36px !important;height:36px !important;display:grid !important;place-items:center !important;
+  color:#171208 !important;border:1px solid rgba(23,18,8,.35) !important;border-radius:50% !important;
+  background:rgba(255,255,255,.18) !important;box-shadow:0 0 12px rgba(255,255,255,.16) !important;
+}
+#proehn-research-capsule .proehn-research-icon svg{display:block !important;width:25px !important;height:25px !important;}
+#proehn-research-capsule .proehn-research-text{
+  font-family:Consolas,"Courier New",monospace !important;font-size:11.5px !important;line-height:1.3 !important;
+  letter-spacing:.035em !important;font-weight:1000 !important;text-transform:uppercase !important;
+  overflow-wrap:anywhere !important;color:#171208 !important;text-shadow:0 1px 0 rgba(255,255,255,.14) !important;
+}
+#proehn-research-capsule .proehn-research-arrow{font-size:18px !important;font-weight:900 !important;color:#171208 !important;margin-left:2px !important;}
+@keyframes proehnResearchPulseV15{
+  0%,100%{transform:scale(1);box-shadow:0 8px 22px rgba(0,0,0,.30),0 0 0 1px rgba(255,255,255,.16) inset,0 0 16px rgba(214,179,90,.27);}
+  50%{transform:scale(1.018);box-shadow:0 11px 28px rgba(0,0,0,.34),0 0 0 1px rgba(255,255,255,.24) inset,0 0 28px rgba(214,179,90,.48);}
+}
+@media(max-width:1350px){#proehn-research-capsule{max-width:min(560px,calc(100vw - 32px)) !important;padding:9px 12px !important;}#proehn-research-capsule .proehn-research-text{font-size:10.5px !important;}}
+@media(max-width:980px){#proehn-research-capsule{width:100% !important;max-width:none !important;justify-content:center !important;}}
+@media(prefers-reduced-motion:reduce){#proehn-homepage-capsule,#proehn-research-capsule{animation:none !important;}}
+</style>
+
+
+<style id="proehn-header-cta-contained-left-gold-v3">
+/* v3 · CTA dentro del header, alineados a la izquierda; ambos botones dorados. */
+html body > .app > .main > .topbar .proehn-header-support#proehn-header-soporte{
+  display:flex !important;
+  flex-direction:column !important;
+  align-items:stretch !important;
+  justify-content:flex-start !important;
+  gap:10px !important;
+  width:max-content !important;
+  max-width:100% !important;
+  box-sizing:border-box !important;
+  padding:10px 12px 12px !important;
+}
+html body > .app > .main > .topbar .proehn-support-main-row{
+  display:flex !important;
+  align-items:center !important;
+  justify-content:space-between !important;
+  gap:10px !important;
+  width:100% !important;
+  min-width:0 !important;
+  box-sizing:border-box !important;
+}
+html body > .app > .main > .topbar .proehn-header-cta-actions{
+  position:relative !important;
+  z-index:3 !important;
+  display:flex !important;
+  flex-direction:column !important;
+  align-items:flex-start !important;
+  justify-content:flex-start !important;
+  gap:9px !important;
+  width:100% !important;
+  min-width:0 !important;
+  margin:0 !important;
+  padding:0 !important;
+}
+html body > .app > .main > .topbar #proehn-homepage-capsule,
+html body > .app > .main > .topbar #proehn-research-capsule{
+  align-self:flex-start !important;
+  margin:0 !important;
+  transform-origin:left center !important;
+  max-width:100% !important;
+  box-sizing:border-box !important;
+  background:linear-gradient(135deg,#fff0b8 0%,#e6c65f 33%,#d6b35a 68%,#b8860b 100%) !important;
+  border:1px solid #fff0b2 !important;
+  color:#171208 !important;
+}
+html body > .app > .main > .topbar #proehn-research-capsule{
+  box-shadow:0 8px 22px rgba(0,0,0,.30),0 0 0 1px rgba(255,255,255,.16) inset,0 0 20px rgba(214,179,90,.34) !important;
+  animation:proehnResearchPulseV15 2.2s ease-in-out infinite !important;
+}
+html body > .app > .main > .topbar #proehn-research-capsule .proehn-research-icon{
+  color:#171208 !important;
+  border-color:rgba(23,18,8,.35) !important;
+  background:rgba(255,255,255,.18) !important;
+  box-shadow:0 0 12px rgba(255,255,255,.16) !important;
+}
+html body > .app > .main > .topbar #proehn-research-capsule .proehn-research-text,
+html body > .app > .main > .topbar #proehn-research-capsule .proehn-research-arrow{
+  color:#171208 !important;
+  text-shadow:0 1px 0 rgba(255,255,255,.14) !important;
+}
+html body > .app > .main > .topbar #proehn-research-capsule:hover{
+  color:#171208 !important;
+  filter:brightness(1.08) saturate(1.04) !important;
+  animation-duration:1.2s !important;
+}
+html body > .app > .main > .topbar #proehn-research-capsule:focus-visible{
+  outline:3px solid #fff0b8 !important;
+  outline-offset:3px !important;
+}
+@media(max-width:1350px){
+  html body > .app > .main > .topbar .proehn-header-support#proehn-header-soporte{width:100% !important;}
+  html body > .app > .main > .topbar .proehn-support-main-row{gap:8px !important;}
+}
+@media(max-width:980px){
+  html body > .app > .main > .topbar .proehn-support-main-row{flex-direction:column !important;align-items:stretch !important;}
+  html body > .app > .main > .topbar .proehn-support-label{min-width:0 !important;}
+  html body > .app > .main > .topbar .proehn-header-cta-actions{align-items:stretch !important;}
+  html body > .app > .main > .topbar #proehn-homepage-capsule,
+  html body > .app > .main > .topbar #proehn-research-capsule{width:100% !important;max-width:100% !important;justify-content:center !important;}
+}
+@media(prefers-reduced-motion:reduce){
+  html body > .app > .main > .topbar #proehn-research-capsule{animation:none !important;}
+}
+</style>
+
+<style id="proehn-header-support-contained-layout-v4">
+/* v4 · Una sola cápsula real para soporte y CTA; los CTA permanecen en el flujo normal. */
+html body > .app > .main > .topbar #proehn-header-soporte.proehn-header-support {
+  position:relative !important;
+  display:flex !important;
+  flex-direction:column !important;
+  flex-wrap:nowrap !important;
+  align-items:stretch !important;
+  justify-content:flex-start !important;
+  height:auto !important;
+  min-height:0 !important;
+  max-height:none !important;
+  width:max-content !important;
+  min-width:0 !important;
+  max-width:min(100%, calc(100vw - 32px)) !important;
+  flex:0 0 auto !important;
+  box-sizing:border-box !important;
+  overflow:hidden !important;
+  padding:12px 14px !important;
+  gap:10px !important;
+}
+html body > .app > .main > .topbar #proehn-header-soporte > .proehn-support-main-row {
+  position:static !important;
+  display:flex !important;
+  flex:0 0 auto !important;
+  align-self:stretch !important;
+  width:100% !important;
+  height:auto !important;
+  min-height:0 !important;
+  max-height:none !important;
+  box-sizing:border-box !important;
+}
+html body > .app > .main > .topbar #proehn-header-soporte > .proehn-header-cta-actions {
+  /* Static positioning ensures these two buttons add to the card's actual height. */
+  position:static !important;
+  inset:auto !important;
+  float:none !important;
+  display:flex !important;
+  flex:0 0 auto !important;
+  flex-direction:column !important;
+  flex-wrap:nowrap !important;
+  align-items:flex-start !important;
+  align-self:stretch !important;
+  justify-content:flex-start !important;
+  width:100% !important;
+  height:auto !important;
+  min-height:0 !important;
+  max-height:none !important;
+  min-width:0 !important;
+  margin:0 !important;
+  padding:0 !important;
+  gap:9px !important;
+  box-sizing:border-box !important;
+  transform:none !important;
+}
+html body > .app > .main > .topbar #proehn-header-soporte > .proehn-header-cta-actions > #proehn-research-capsule,
+html body > .app > .main > .topbar #proehn-header-soporte > .proehn-header-cta-actions > #proehn-homepage-capsule {
+  position:relative !important;
+  inset:auto !important;
+  float:none !important;
+  display:flex !important;
+  flex:0 0 auto !important;
+  align-self:flex-start !important;
+  width:max-content !important;
+  height:auto !important;
+  min-height:0 !important;
+  max-height:none !important;
+  max-width:100% !important;
+  margin:0 !important;
+  transform-origin:left center !important;
+  box-sizing:border-box !important;
+  background:linear-gradient(135deg,#fff0b8 0%,#e6c65f 33%,#d6b35a 68%,#b8860b 100%) !important;
+  border:1px solid #fff0b2 !important;
+  color:#171208 !important;
+}
+html body > .app > .main > .topbar #proehn-header-soporte > .proehn-header-cta-actions > #proehn-research-capsule {
+  order:1 !important;
+  box-shadow:0 8px 22px rgba(0,0,0,.30),0 0 0 1px rgba(255,255,255,.16) inset,0 0 20px rgba(214,179,90,.34) !important;
+  animation:proehnResearchPulseV15 2.2s ease-in-out infinite !important;
+}
+html body > .app > .main > .topbar #proehn-header-soporte > .proehn-header-cta-actions > #proehn-homepage-capsule {
+  order:2 !important;
+}
+@media(max-width:980px) {
+  html body > .app > .main > .topbar #proehn-header-soporte.proehn-header-support {
+    width:100% !important;
+    max-width:100% !important;
+    overflow:hidden !important;
+  }
+  html body > .app > .main > .topbar #proehn-header-soporte > .proehn-support-main-row {
+    flex-direction:column !important;
+    align-items:stretch !important;
+  }
+  html body > .app > .main > .topbar #proehn-header-soporte > .proehn-support-main-row > .proehn-support-actions {
+    display:grid !important;
+    grid-template-columns:1fr !important;
+    width:100% !important;
+  }
+  html body > .app > .main > .topbar #proehn-header-soporte > .proehn-header-cta-actions > #proehn-research-capsule,
+  html body > .app > .main > .topbar #proehn-header-soporte > .proehn-header-cta-actions > #proehn-homepage-capsule {
+    align-self:stretch !important;
+    width:100% !important;
+    max-width:100% !important;
+    justify-content:center !important;
+  }
+}
+@media(prefers-reduced-motion:reduce) {
+  html body > .app > .main > .topbar #proehn-header-soporte > .proehn-header-cta-actions > #proehn-research-capsule {
+    animation:none !important;
+  }
+}
 </style>
 
 __PROEHN_EDITOR_BODY_CLOSE_7E91__
